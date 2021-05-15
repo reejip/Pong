@@ -707,8 +707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  scorerightText: {fileID: 0}
-  scoreleftText: {fileID: 0}
+  scorerightText: {fileID: 1401637861}
+  scoreleftText: {fileID: 238362151}
 --- !u!1 &479692866
 GameObject:
   m_ObjectHideFlags: 0

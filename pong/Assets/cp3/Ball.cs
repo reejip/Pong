@@ -51,7 +51,7 @@ public class Ball : MonoBehaviour
         if (col.gameObject.name == "Wallright")
         {
             scoreLeft++;
-            scorerightText.text = scoreLeft.ToString();
+            scoreleftText.text = scoreLeft.ToString();
 
 
         }
