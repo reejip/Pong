@@ -38,12 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: bk
-    uniqueID: 735261573
+  - name: Backgrond
+    uniqueID: 212317083
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: New Layer
-    uniqueID: 634363873
     locked: 0
