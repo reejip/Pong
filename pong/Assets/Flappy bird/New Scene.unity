@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 294157866}
   - component: {fileID: 294157870}
   - component: {fileID: 294157869}
+  - component: {fileID: 294157871}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -219,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294157865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.14, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -240,7 +241,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -272,6 +273,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.68, y: 0.48}
   m_EdgeRadius: 0
+--- !u!114 &294157871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294157865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b6114cd80b0dc4dae398374a8ea2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb2b: {fileID: 0}
 --- !u!1 &1056511570
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +340,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 212317083
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5854987939228962500, guid: 38e4df2b26ba6b041b8854d9ee857ba7,
     type: 3}
@@ -381,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253958519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -3.95, z: 0}
+  m_LocalPosition: {x: 0.09, y: -4.01, z: 0}
   m_LocalScale: {x: 1.0137811, y: 1.025641, z: 1}
   m_Children: []
   m_Father: {fileID: 1056511572}
