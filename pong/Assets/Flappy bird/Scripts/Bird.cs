@@ -11,7 +11,19 @@ public class Bird : MonoBehaviour
     [SerializeField]
 
     Rigidbody2D rb2b;
-    private float flapForce = 20f;
+    private float flapForce = 200f;
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "grond"){
+            Debug.Log("hit");
+        }
+    }
+            
+      
+        
+    
+
 
 
 
@@ -31,8 +43,14 @@ public class Bird : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
+        {
             rb2b.velocity = Vector2.right * speed * Time.deltaTime;
 
-        rb2b.AddForce(Vector2.up * flapForce);
+            rb2b.AddForce(Vector2.up * flapForce);
+        }
     }
+     
+    
+         
+    
 }
