@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - player
   layers:
   - Default
   - TransparentFX
@@ -38,11 +39,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: bird
-    uniqueID: 1804983559
-    locked: 0
   - name: Backgrond
     uniqueID: 212317083
+    locked: 0
+  - name: bird
+    uniqueID: 1804983559
     locked: 0
   - name: Default
     uniqueID: 0
