@@ -21,15 +21,14 @@ public class Bird : MonoBehaviour
             Debug.Log("hit");
         }
 
-        {
+        
             isDead = true;
             Debug.Log("death");
                 rb2b.velocity = Vector2.zero;
-
             GetComponent<Animator>().SetBool("isDead" , true);
 
-        }
-            
+        
+         
 
     }
 

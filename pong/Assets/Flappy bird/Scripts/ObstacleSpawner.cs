@@ -9,10 +9,9 @@ public class ObstacleSpawner : MonoBehaviour
     public float maxY;
     public float ditance;
 
-    void OnTriggerEnter2D(Collider2D coll);
-    {
+    
    
-    }
+    
 
 }
 
