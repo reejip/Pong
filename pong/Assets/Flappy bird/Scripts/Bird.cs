@@ -7,11 +7,12 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     public float speed = 5f;
-
+    bool isDead;
     [SerializeField]
 
     Rigidbody2D rb2b;
     private float flapForce = 200f;
+
 
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -20,14 +21,17 @@ public class Bird : MonoBehaviour
             Debug.Log("hit");
         }
 
-        void OnTriggerExit2D(Collider2D Col)
         {
-            if (Col.gameObject.tag == "player")
-            {
-                transform.position += Vector3.right * GetComponent<SpriteRenderer>().bounds.size.x;
-            }
+            isDead = true;
+            Debug.Log("death");
+                rb2b.velocity = Vector2.zero;
+
+            GetComponent<Animator>().SetBool("isDead" , true);
 
         }
+            
+
+    }
 
 
 
@@ -57,11 +61,15 @@ public class Bird : MonoBehaviour
 
                 rb2b.AddForce(Vector2.up * flapForce);
             }
+       
+        
         }
 
 
 
 
 
-    }
+
+    
 }
+
