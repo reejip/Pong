@@ -23,8 +23,8 @@ public class Bird : MonoBehaviour
 
         
             isDead = true;
-            Debug.Log("death");
-                rb2b.velocity = Vector2.zero;
+
+            rb2b.velocity = Vector2.zero;
             GetComponent<Animator>().SetBool("isDead" , true);
 
         

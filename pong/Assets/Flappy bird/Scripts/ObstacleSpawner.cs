@@ -9,13 +9,16 @@ public class ObstacleSpawner : MonoBehaviour
     public float maxY;
     public float ditance;
 
+void OnTriggerEnter2D(Collider2D col)
+{
+        float obstacleY = Random.Range(minY);
+        
+}
     
    
     
 
 }
-
-    // Start is called before the first frame update
     
         
     
