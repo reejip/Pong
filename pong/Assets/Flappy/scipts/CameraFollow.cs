@@ -6,9 +6,10 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform birdTransform;
     Vector3 range;
-    private void Awake()
+
+    void Awake()
     {
-        range = transform.position - birdTransform.position; 
+        range = transform.position - birdTransform.position;
     }
     // Start is called before the first frame update
     void Start()
@@ -17,10 +18,9 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUptade()
+    void FixedUpdate()
     {
-        transform.position = new Vector3(range.x + birdTransform.position.x, transform.position.y, range.z
-            + birdTransform.position.z);
-        
+        transform.position = new Vector3(range.x + birdTransform.position.x, transform.position.y, range.z + birdTransform.position.z); 
+
     }
 }
