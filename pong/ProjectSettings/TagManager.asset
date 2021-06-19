@@ -6,7 +6,6 @@ TagManager:
   tags:
   - player
   - Obstacle
-  - Hide
   layers:
   - Default
   - TransparentFX

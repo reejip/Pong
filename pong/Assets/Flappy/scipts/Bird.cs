@@ -49,8 +49,9 @@ public class Bird : MonoBehaviour
              Time.timeScale = 1;
 
    }
-}
-  
-    
-   
 
+   public void BtnOnClick(){
+   gameObject.GetComponent<Button>().interactable = false;
+   }  
+   
+}
