@@ -2,10 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class Bird : MonoBehaviour
 {
+    int score = 0;
+    public Text scoreText;
+    void OnTriggerEnter2D(Collider2D col) {
+    if(col.gameObject.tag == "Score") {
+        score++;
+        Debug.Log(score);
+        scoreText.text = score.ToString();
+        }
+    }
+
     Rigidbody2D rb2d;
     public float speed = 5f;
     bool isDead;
@@ -49,7 +59,4 @@ public class Bird : MonoBehaviour
              Time.timeScale = 1;
 
    }
-
-   
-   
 }
