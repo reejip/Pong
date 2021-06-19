@@ -50,8 +50,6 @@ public class Bird : MonoBehaviour
 
    }
 
-   public void BtnOnClick(){
-   gameObject.GetComponent<Button>().interactable = false;
-   }  
+   
    
 }
